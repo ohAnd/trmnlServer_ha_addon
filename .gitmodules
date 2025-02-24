@@ -1,0 +1,3 @@
+[submodule "trmnl_server/src"]
+	path = trmnl_server/src
+	url = https://github.com/ohAnd/trmnlServer.git
