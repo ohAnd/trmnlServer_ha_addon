@@ -9,7 +9,7 @@ This repository contains only one add-on.
 
 To use this addon you need a TRMNL client for displaying dynamic BMP images aon a eInk-Screen
 
-### [trmnl_server add-on](./trmnlServer)
+### [trmnl_server add-on](./trmnl_server)
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
