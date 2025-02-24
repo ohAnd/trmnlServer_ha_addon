@@ -1,0 +1,38 @@
+name: "trmnl_server"
+description: "TRMNL local server to simulate the cloud service locally to serve own BMP's directly"
+version: "0.0.3"
+slug: "trmnl_server"
+url: "https://github.com/ohAnd/trmnlServer"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+ports:
+  83/tcp: 83
+network: host
+map:
+  - type: ssl
+  - type: addon_config
+    read_only: false
+    path: /app/addon_config
+host_network: true
+
+options:
+  time_zone: Europe/Berlin #your time zone. not optional.
+  loglevel: debug
+  image_path: /addon_config/trmnlServer/screen.bmp
+  image_modification: true
+  refresh_time: 120
+  battery_max_voltage: 4.7
+  battery_min_voltage: 2.2
+schema:
+  time_zone: str #your time zone. not optional.
+  loglevel: list(debug|info|warning|error)
+  image_path: str
+  image_modification: bool
+  refresh_time: int
+  battery_max_voltage: float(2,5)
+  battery_min_voltage: float(0.5,4)
