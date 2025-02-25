@@ -1,6 +1,6 @@
 name: "trmnl_server"
 description: "TRMNL local server to simulate the cloud service locally to serve own BMP's directly"
-version: "0.0.4"
+version: "0.0.4-fix1"
 slug: "trmnl_server"
 url: "https://github.com/ohAnd/trmnlServer"
 init: false

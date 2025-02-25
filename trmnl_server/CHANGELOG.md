@@ -1,3 +1,6 @@
+**Version 0.0.4-fix1** published on 25.02.2025
+- fix generate certifacte and key for SSL
+  
 **Version 0.0.4** published on 25.02.2025
 - small bugfixes
 
