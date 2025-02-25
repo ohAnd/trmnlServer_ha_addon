@@ -1,3 +1,6 @@
+**Version 0.0.4** published on 25.02.2025
+- small bugfixes
+
 **Version 0.0.3** published on 17.02.2025
 - configurable timezone
   

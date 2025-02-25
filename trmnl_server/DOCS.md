@@ -12,4 +12,4 @@ To enable the usage of TRMNL with this self hosted server there are 2 options:
 
 1. basic configuration needed for path to image
 2. optional parameters having defaults
-3. open the status webpage at https://homeassistant:83 
+3. open the status webpage at https://homeassistant:83 (replace with the configured port)

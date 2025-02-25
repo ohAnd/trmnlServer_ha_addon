@@ -2,9 +2,6 @@ configuration:
   time_zone: #your time zone. not optional.
     name: Timezone
     description: Location from to tzdata e.g. Europe/Berlin
-  loglevel:
-    name: Loglevel
-    description: choose from debug, info, warning, error
   image_path:
     name: Path or URL to Image
     description: local path or URL to the BMP image to show

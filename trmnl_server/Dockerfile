@@ -17,7 +17,7 @@ RUN apk add --no-cache \
 
 COPY ./src /app
 COPY entrypoint.sh /app
-# RUN touch /app/config.yaml
+
 WORKDIR /app
 RUN ln -sf /data/options.json /app/config.yaml
 
