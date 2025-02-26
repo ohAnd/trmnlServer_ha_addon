@@ -18,7 +18,6 @@ map:
     read_only: false
     path: /app/addon_config
 host_network: true
-webui: http://[HOST]:[PORT:83]/
 ports:
   83/tcp: 83
 ports_description:
