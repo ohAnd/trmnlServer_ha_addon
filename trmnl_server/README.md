@@ -12,3 +12,8 @@ To enable the usage of TRMNL with this self hosted server there are 2 options:
 
 For further details, ongoing discussions, bugs and features you may check the main repository of trmnlServer.
 https://github.com/ohAnd/trmnlServer
+
+## local testenvironment
+
+1. building docker container: `docker build --build-arg BUILD_FROM=homeassistant/amd64-base:latest -t test_trmnl_server .`
+2. running the container: `docker run -d --name trmnl_server_container -p 83:83 test_trmnl_server`

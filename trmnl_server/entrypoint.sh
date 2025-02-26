@@ -13,9 +13,12 @@ CONFIG_FILE_HA="/data/options.json"
 if test -e $CONFIG_FILE_SHARED ; then
   echo "Using Config file found in addon config folder."
   ln -sf $CONFIG_FILE_SHARED $CONFIG_FILE
-else
+else if test -e $CONFIG_FILE_HA ; then
   echo "Config file tmrnlServer_config.yaml not found in addon config folder. Proceeding with data from HA Addon configuration"
   ln -sf $CONFIG_FILE_HA $CONFIG_FILE
+else
+  echo "Config file tmrnlServer_config.yaml not found in addon config folder. Proceeding with default configuration"
+fi
 fi
 
 # Start trmnl_server.py
