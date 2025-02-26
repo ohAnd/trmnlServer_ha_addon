@@ -1,3 +1,6 @@
+**Version 0.0.5** published on 26.02.2025
+- extend HA addon settings
+  
 **Version 0.0.4-fix3** published on 26.02.2025
 - fix logging
   

@@ -1,25 +1,28 @@
 name: "trmnl_server"
 description: "TRMNL local server to serve own BMP's directly"
-version: "0.0.4-fix3"
+version: "0.0.5"
 slug: "trmnl_server"
 url: "https://github.com/ohAnd/trmnlServer"
+ingress: true
+ingress_port: 83
 init: false
 arch:
-  - aarch64
-  - amd64
   - armhf
   - armv7
+  - aarch64
+  - amd64
   - i386
-ports:
-  83/tcp: 83
-# network: host
 map:
   - type: ssl
   - type: addon_config
     read_only: false
     path: /app/addon_config
 host_network: true
-
+webui: http://[HOST]:[PORT:83]/
+ports:
+  83/tcp: 83
+ports_description:
+  83/tcp: "trmnlServer webpage"
 options:
   time_zone: Europe/Berlin #your time zone. not optional.
   image_path: /addon_config/trmnlServer/screen.bmp
