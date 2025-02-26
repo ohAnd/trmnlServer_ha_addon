@@ -1,17 +1,19 @@
 name: "trmnl_server"
 description: "TRMNL local server to serve own BMP's directly"
-version: "0.0.5"
+version: "0.0.5_fix1"
 slug: "trmnl_server"
 url: "https://github.com/ohAnd/trmnlServer"
-ingress: true
-ingress_port: 83
-init: false
 arch:
   - armhf
   - armv7
   - aarch64
   - amd64
   - i386
+startup: application
+boot: auto
+ingress: true
+ingress_port: 83
+init: false
 map:
   - type: ssl
   - type: addon_config
