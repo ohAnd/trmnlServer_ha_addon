@@ -1,3 +1,8 @@
+ARCHIVED - moved to https://github.com/ohAnd/ha_addons
+
+---
+---
+
 # Home Assistant add-on repository
 
 
